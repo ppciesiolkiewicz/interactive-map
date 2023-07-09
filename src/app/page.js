@@ -1,9 +1,13 @@
 "use client"
+import dynamic from 'next/dynamic';
 import React, { useState } from 'react';
 import { Box, Grid, Button, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
-import Map from '@/components/Map';
 import MapItemList from '@/components/MapItemList';
 import data from '@/data/incidents.json';
+
+const Map = dynamic(() => import('@/components/Map'), {
+  ssr: false,
+});
 
 
 export default function Home() {

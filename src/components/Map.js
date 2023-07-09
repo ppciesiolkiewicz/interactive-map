@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import React, { useEffect, useCallback, useMemo } from 'react';
 import { ZoomControl, MapContainer, TileLayer, Marker, Popup, useMapEvents, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
