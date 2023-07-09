@@ -34,7 +34,7 @@ export default function Home() {
         onClick={handleDialogOpen}
         sx={{ position: 'fixed', zIndex: 999, top: '10px', left: '10px', display: { xs: 'block', sm: 'none' } }}
       >
-        See Incidents List
+        See Incidents List ({visibleMarkers.length})
       </Button>
       <Dialog open={dialogOpen} onClose={handleDialogClose} fullScreen>
         <DialogTitle>Incidents</DialogTitle>
